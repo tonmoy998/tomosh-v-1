@@ -1,0 +1,45 @@
+@use "../custom" as *;
+@use '../components/mixins' as *;
+
+.contact{
+    padding:5% 2%;
+    margin-top: 3rem;
+    @include gradient;
+    position: relative;
+    .tittle-underline,.tittle-box{
+        background-color: $white;
+    }
+    .container{
+    .row{
+        margin: 2rem!important;
+        .--service{
+            h1,p,li,ul{
+                color: $white;
+            }
+            ul{
+                li{
+                    padding: 0.5rem;
+                }
+            }
+        }
+        .--form{
+            background-color: $white;
+            .btn-primary{
+                color: $white;
+                font-weight: bold;
+                padding: 0.625rem 1.25rem!important;
+                display: flex;
+                margin: 0.5rem auto!important;
+            }
+            .input-container{
+                padding-top: 3rem;
+            }
+            .form-group{
+              .display-6{
+                  padding-top:1rem;
+              }
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,59 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.features{
+    
+    .container{
+           .row.--feature-1{
+               .--1{
+                   border-right: 3px solid $primary;
+               }
+               .--2{
+                   border-left: 3px solid $primary;
+               }
+           margin-top: 2rem;
+           .col-md-6{
+               .text{
+                   line-height: 2rem;
+                   font-size: 1.5rem;
+               }
+           }
+        }
+        .row.--feature-2{
+            padding-top: 5rem!important;
+            .--description{
+                span{
+                   .--feature-logo{
+                        padding:1rem 0rem!important;
+                    }
+                }
+                h1{
+                    padding: 1rem 0rem!important;
+                }
+                p{
+                    line-height: 2rem;
+                }
+            }
+            .col-md-6{
+                .--feature-tittle{
+                    color: $primary;
+                    font-size: 2rem;
+                }
+                .--feature-logo{
+                    font-size: 4rem;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .row.--feature-1{
+        .--1{
+            border-right: none!important;
+        }
+        .--2{
+            border-left:none!important;
+        }
+    }
+}

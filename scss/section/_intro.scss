@@ -1,0 +1,58 @@
+@use '../custom' as *;
+@use "../components/mixins" as *;
+.intro{
+    
+    background-image: linear-gradient(to top,$primary,$secondary);
+    opacity: 100%!important;
+    padding-top: 8rem;
+    .container{
+        .row{
+            .col-md-6.--intro{
+              .btn-rounded{
+                    display: flex;
+                    margin:0.7rem auto;                   
+                }
+                .animated{
+                    padding-right: 0.5rem;
+                    font-size: 2.66rem;
+                    margin:1rem 0;
+                    color: $white;
+                    font-weight: bold;
+                    height: 3.6rem;
+                    animation: text 3s steps(16) infinite;
+                    width: 0ch;
+                    border-right:4px solid $white;
+                    outline: none;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+@keyframes text{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width: 9ch;
+    }
+}
+@media screen and (min-width:900px){
+    .col-md-6.--intro{
+        .animated{
+            font-size: 3.8rem!important;
+            height: 4.9rem!important;
+        }
+        .btn-rounded{
+            width: 10rem!important;
+            display: block!important;
+            margin: 2rem 0rem!important;
+            span{
+                i{
+                    padding-left: 0.4rem!important;
+                }
+            }
+        }
+    }
+}

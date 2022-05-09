@@ -1,0 +1,67 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.testimonials{
+    @include gradient;
+    .carousel.slide{
+        .carousel-inner{
+            .carousel-item{
+                .--client{
+                    width: 8rem!important;
+                    height: 8rem!important;
+                    border-radius: 8rem!important;
+                    border: 1px solid $primary!important;
+                    display: flex!important;
+                    margin: 1rem auto!important;
+                    box-shadow: 0px 2px 8px $black;
+                }
+                .--text{
+                    h3,h5,p{
+                        font-weight: 800;
+                    }
+                    h3{
+                         color: $success;
+                        text-transform: capitalize;
+                        font-size: 2.4rem;
+                        text-align: center;
+                    }
+                h5{ text-transform: capitalize;
+                    text-align: center;
+                    font-size: 1.89rem;
+                    color: rgb(255, 255, 255);
+                }
+                p{  color: $success;
+                    text-align: center;
+                    font-size: 1.3rem;
+                    max-width: 40rem;
+                    margin: 1rem auto!important;
+                    span{
+                        i{
+                            color: rgb(255, 230, 0);
+                        }
+                    }
+                }
+                }
+                .rating{
+                    width: 12rem;
+                    display: flex;
+                    margin: 0.5rem auto!important;
+                    span{
+                        i{  padding:0.1rem 0.2rem!important;
+                            font-size: 1.7rem;
+                            color: rgb(255, 196, 0);
+                            text-shadow: 0px 1px 2px $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.button-container{
+    width: 6rem!important;
+    position: absolute;
+    top: 28rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

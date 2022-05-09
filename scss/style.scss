@@ -1,0 +1,73 @@
+@use './custom' as *;
+
+//IMPORT COMPONENTS
+@use './components/buttons';
+@use './components/mixins';
+
+//IMPORT SECTIONS
+@use 'section/nav';
+@use 'section/intro';
+@use 'section/features';
+@use 'section/testimonials';
+@use 'section/galary';
+@use 'section/faq';
+@use 'section/contact';
+@use 'section/footer';
+
+
+html,body{
+    font-family: 'Poppins', sans-serif!important;
+}
+.container{
+    width: 100%!important;
+}
+p{
+    font-size: 1.3rem;
+}
+
+    .tittle-underline{
+        width: 35rem;
+        height: 0.3rem;
+        background-color: $primary;
+        margin: 0 auto!important;
+    }
+    .tittle-box{
+        width:1.3rem;
+        height: 0.7rem;
+        background-color: $primary;
+        margin:0 auto;
+    }
+.up-icon-container{
+    .--up-icon{
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        position: fixed;
+        top: 90%;
+        left: 95%;
+        color: $white;
+        border: 2px solid rgb(255, 0, 0);
+        &:hover{
+            color: $black;
+        }
+        &:hover{
+            background-color: $primary;
+            border: 1px solid $success;
+        }
+    }
+
+}
+@media screen and (max-width:575px){
+  
+        .tittle-underline{
+            width: 17rem;
+        }
+        .tittle-box{
+            width: 0.9rem;
+            height: 0.5rem;
+        }
+        .--up-icon{
+            left: 85%!important;
+        }
+}

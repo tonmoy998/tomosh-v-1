@@ -1,0 +1,10 @@
+
+//color
+$orange:  #ff7504;
+$yellow:  #c56306;
+$gray-400: #ced4da;
+//variables
+$primary: $orange;
+$secondary: $yellow;
+$success:$gray-400;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
